@@ -30,7 +30,7 @@ export default function Home() {
         <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
           <div className="flex items-center gap-2">
             <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="LumiWeb Logo" width={32} height={32} className="h-8 w-8 text-accent" />
-            <span className="text-xl font-bold font-headline">LumiWeb</span>
+            <span className="text-xl font-bold font-headline">Solo Lumi</span>
           </div>
           <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
             <AndroidIcon className="mr-2 h-5 w-5" />
@@ -219,7 +219,7 @@ export default function Home() {
       <footer className="border-t">
         <div className="container mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-8 sm:flex-row">
             <div className="text-center sm:text-left">
-                <p className="text-sm font-semibold">&copy; {new Date().getFullYear()} LumiWeb. Todos los derechos reservados.</p>
+                <p className="text-sm font-semibold">&copy; {new Date().getFullYear()} Solo Lumi. Todos los derechos reservados.</p>
                 <p className="text-sm text-muted-foreground">Distribuido bajo la Licencia MIT.</p>
             </div>
             <div className="flex gap-4 text-sm">

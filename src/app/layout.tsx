@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'LumiWeb',
+  title: 'Solo Lumi',
   description: 'Reimaginando la Interacción con Códigos QR a través de la IA.',
 };
 
