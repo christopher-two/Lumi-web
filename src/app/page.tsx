@@ -8,6 +8,7 @@ import {
   Linkedin,
   Mail,
   ChevronRight,
+  X,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -184,14 +185,13 @@ export default function Home() {
 
         {/* Contact Section */}
         <section id="contact" className="bg-secondary py-16 md:py-24">
-          <div className="container mx-auto -mb-24 max-w-3xl px-4 text-center">
-            <div className="rounded-t-lg bg-gray-900 py-8 px-4 text-white">
-              <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="w-full -mb-24 text-center">
+            <div className="bg-gray-900 py-8 text-white">
+              <div className="container mx-auto flex items-center justify-center gap-4 sm:gap-8">
                 <span className="text-lg">creado por</span>
-                <div className="flex items-center gap-6">
-                  <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={60} height={60} className="h-14 w-14 filter invert" />
-                  <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={140} height={56} className="h-14 filter invert" />
-                </div>
+                <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={60} height={60} className="h-14 w-14 filter invert" />
+                <X className="h-8 w-8 text-white" />
+                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={140} height={56} className="h-14 filter invert" />
               </div>
             </div>
           </div>
