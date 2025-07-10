@@ -188,9 +188,9 @@ export default function Home() {
             <div className="w-full rounded-t-lg bg-gray-900 py-8 text-center text-white">
               <div className="container mx-auto flex items-center justify-center gap-4 sm:gap-8">
                 <span className="text-lg">creado por</span>
-                <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={50} height={50} className="h-12 w-12 filter invert" />
+                <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={50} height={50} className="h-12 w-auto filter invert" />
                 <X className="h-8 w-8 text-white" />
-                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={120} height={48} className="h-12 w-auto" />
+                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={150} height={48} className="h-12 w-auto" />
               </div>
             </div>
         </section>
@@ -199,7 +199,7 @@ export default function Home() {
       <footer className="bg-gray-900 text-white">
         <div className="container mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-8 sm:flex-row">
             <div className="text-center sm:text-left">
-                <p className="text-sm font-semibold">&copy; {new Date().getFullYear()} Lumi. Todos los derechos reservados.</p>
+                <p className="text-sm font-semibold">&copy; {new Date().getFullYear()} Todos los derechos reservados a Override y Christopher Two.</p>
                 <p className="text-sm text-gray-400">Distribuido bajo la Licencia MIT.</p>
             </div>
             <div className="flex gap-4 text-sm">
