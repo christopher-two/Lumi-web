@@ -184,27 +184,29 @@ export default function Home() {
 
         {/* Contact Section */}
         <section id="contact" className="bg-secondary py-16 md:py-24">
-          <div className="container mx-auto max-w-3xl px-4 text-center">
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <span className="text-lg text-muted-foreground">creado por</span>
-              <div className="flex items-center gap-4">
-                <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={50} height={50} className="h-12 w-12" />
-                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={120} height={48} className="h-12" />
+          <div className="container mx-auto -mb-24 max-w-3xl px-4 text-center">
+            <div className="rounded-t-lg bg-gray-900 py-8 px-4 text-white">
+              <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                <span className="text-lg">creado por</span>
+                <div className="flex items-center gap-6">
+                  <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={60} height={60} className="h-14 w-14 filter invert" />
+                  <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={140} height={56} className="h-14 filter invert" />
+                </div>
               </div>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="border-t">
+      <footer className="bg-gray-900 text-white">
         <div className="container mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-8 sm:flex-row">
             <div className="text-center sm:text-left">
                 <p className="text-sm font-semibold">&copy; {new Date().getFullYear()} Lumi. Todos los derechos reservados.</p>
-                <p className="text-sm text-muted-foreground">Distribuido bajo la Licencia MIT.</p>
+                <p className="text-sm text-gray-400">Distribuido bajo la Licencia MIT.</p>
             </div>
             <div className="flex gap-4 text-sm">
-                <a href="#" className="text-muted-foreground hover:text-foreground">Política de Privacidad</a>
-                <a href="#" className="text-muted-foreground hover:text-foreground">Términos de Servicio</a>
+                <a href="#" className="text-gray-400 hover:text-white">Política de Privacidad</a>
+                <a href="#" className="text-gray-400 hover:text-white">Términos de Servicio</a>
             </div>
         </div>
       </footer>
@@ -249,3 +251,5 @@ function HowItWorksFlow({ title, steps }: { title: string, steps: { name: string
         </div>
     )
 }
+
+    
