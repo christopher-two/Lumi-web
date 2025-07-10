@@ -33,9 +33,11 @@ export default function Home() {
             <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={32} height={32} className="h-8 w-8" />
             <span className="text-xl font-bold font-headline">Lumi</span>
           </div>
-          <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <AndroidIcon className="mr-2 h-5 w-5" />
-            Descargar APK
+          <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <a href="/lumi.apk" download>
+              <AndroidIcon className="mr-2 h-5 w-5" />
+              Descargar APK
+            </a>
           </Button>
         </div>
       </header>
@@ -55,9 +57,11 @@ export default function Home() {
               Escanea, Genera y Personaliza Códigos QR de Forma Inteligente y Sin Esfuerzo.
             </p>
             <div className="mt-8 flex justify-center gap-4">
-              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                <AndroidIcon className="mr-2 h-5 w-5" />
-                Descargar Lumi (APK)
+              <Button size="lg" asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+                <a href="/lumi.apk" download>
+                  <AndroidIcon className="mr-2 h-5 w-5" />
+                  Descargar Lumi (APK)
+                </a>
               </Button>
             </div>
           </div>
@@ -190,7 +194,7 @@ export default function Home() {
                 <span className="text-lg">creado por</span>
                 <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={50} height={50} className="h-12 w-auto filter invert" />
                 <X className="h-8 w-8 text-white" />
-                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={150} height={48} className="h-12 w-auto" />
+                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo_w.svg" alt="Override Logo" width={150} height={48} className="h-12 w-auto" />
               </div>
             </div>
         </section>
