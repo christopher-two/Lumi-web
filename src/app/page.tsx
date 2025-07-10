@@ -29,7 +29,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
           <div className="flex items-center gap-2">
-            <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//christopher_two.svg" alt="LumiWeb Logo" width={32} height={32} className="h-8 w-8 text-accent" />
+            <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="LumiWeb Logo" width={32} height={32} className="h-8 w-8 text-accent" />
             <span className="text-xl font-bold font-headline">LumiWeb</span>
           </div>
           <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
