@@ -30,7 +30,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
           <div className="flex items-center gap-2">
-            <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={32} height={32} className="h-8 w-8 text-accent" />
+            <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={32} height={32} className="h-8 w-8" />
             <span className="text-xl font-bold font-headline">Lumi</span>
           </div>
           <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
@@ -184,9 +184,8 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="bg-secondary py-16 md:py-24">
-          <div className="w-full -mb-24 text-center">
-            <div className="bg-gray-900 py-8 text-white">
+        <section id="contact" className="w-full bg-background pt-16 md:pt-24">
+            <div className="w-full rounded-t-lg bg-gray-900 py-8 text-center text-white">
               <div className="container mx-auto flex items-center justify-center gap-4 sm:gap-8">
                 <span className="text-lg">creado por</span>
                 <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={60} height={60} className="h-14 w-14 filter invert" />
@@ -194,7 +193,6 @@ export default function Home() {
                 <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={140} height={56} className="h-14 filter invert" />
               </div>
             </div>
-          </div>
         </section>
       </main>
 
