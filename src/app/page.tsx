@@ -190,7 +190,7 @@ export default function Home() {
                 <span className="text-lg">creado por</span>
                 <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={60} height={60} className="h-14 w-14 filter invert" />
                 <X className="h-8 w-8 text-white" />
-                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={140} height={56} className="h-14 w-auto filter invert" />
+                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={140} height={56} className="h-14 w-auto" />
               </div>
             </div>
         </section>
