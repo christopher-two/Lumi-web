@@ -188,8 +188,8 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <span className="text-lg text-muted-foreground">creado por</span>
               <div className="flex items-center gap-4">
-                <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={40} height={40} className="h-10 w-10" />
-                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={100} height={40} />
+                <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={50} height={50} className="h-12 w-12" />
+                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={120} height={48} className="h-12" />
               </div>
             </div>
           </div>
