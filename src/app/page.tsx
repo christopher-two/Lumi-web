@@ -189,20 +189,7 @@ export default function Home() {
               <span className="text-lg text-muted-foreground">creado por</span>
               <div className="flex items-center gap-4">
                 <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={40} height={40} className="h-10 w-10" />
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M12 2L2 7V17L12 22L22 17V7L12 2ZM12 11.5L20 7L12 2.5L4 7L12 11.5Z"
-                    fill="currentColor"
-                  />
-                </svg>
+                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={100} height={40} />
               </div>
             </div>
           </div>

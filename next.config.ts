@@ -21,6 +21,12 @@ const nextConfig: NextConfig = {
         hostname: 'vluoppbaehfmhkebyygv.supabase.co',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'override.com.mx',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
