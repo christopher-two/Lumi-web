@@ -29,7 +29,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
           <div className="flex items-center gap-2">
-            <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="LumiWeb Logo" width={32} height={32} className="h-8 w-8 text-accent" />
+            <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={32} height={32} className="h-8 w-8 text-accent" />
             <span className="text-xl font-bold font-headline">Lumi</span>
           </div>
           <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
@@ -185,32 +185,25 @@ export default function Home() {
         {/* Contact Section */}
         <section id="contact" className="bg-secondary py-16 md:py-24">
           <div className="container mx-auto max-w-3xl px-4 text-center">
-            <h2 className="text-3xl font-bold md:text-4xl">Soporte y Contacto</h2>
-            <p className="mt-4 mb-8 text-lg text-muted-foreground">
-              ¿Tienes preguntas o sugerencias? Nos encantaría escucharte.
-            </p>
-            <form className="mx-auto mt-8 max-w-lg text-left">
-              <div className="grid grid-cols-1 gap-6">
-                <Input type="text" placeholder="Nombre" aria-label="Nombre" />
-                <Input type="email" placeholder="Email" aria-label="Email"/>
-                <Textarea placeholder="Mensaje" aria-label="Mensaje" rows={4} />
-                <Button type="submit" className="bg-accent text-accent-foreground hover:bg-accent/90">Enviar Mensaje</Button>
+            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <span className="text-lg text-muted-foreground">creado por</span>
+              <div className="flex items-center gap-4">
+                <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={40} height={40} className="h-10 w-10" />
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M12 2L2 7V17L12 22L22 17V7L12 2ZM12 11.5L20 7L12 2.5L4 7L12 11.5Z"
+                    fill="currentColor"
+                  />
+                </svg>
               </div>
-            </form>
-            <div className="mt-12">
-                <p className="text-muted-foreground">O contáctanos directamente:</p>
-                <a href="mailto:soporte@lumi.app" className="mt-2 inline-flex items-center gap-2 text-accent hover:underline">
-                    <Mail className="h-5 w-5" />
-                    soporte@lumi.app
-                </a>
-                <div className="mt-4 flex justify-center gap-4">
-                    <Button variant="ghost" size="icon" asChild>
-                        <a href="#" aria-label="Twitter"><Twitter/></a>
-                    </Button>
-                    <Button variant="ghost" size="icon" asChild>
-                        <a href="#" aria-label="LinkedIn"><Linkedin/></a>
-                    </Button>
-                </div>
             </div>
           </div>
         </section>
