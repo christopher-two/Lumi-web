@@ -188,9 +188,9 @@ export default function Home() {
             <div className="w-full rounded-t-lg bg-gray-900 py-8 text-center text-white">
               <div className="container mx-auto flex items-center justify-center gap-4 sm:gap-8">
                 <span className="text-lg">creado por</span>
-                <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={60} height={60} className="h-14 w-14 filter invert" />
+                <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={50} height={50} className="h-12 w-12 filter invert" />
                 <X className="h-8 w-8 text-white" />
-                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={140} height={56} className="h-14 w-auto" />
+                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={120} height={48} className="h-12 w-auto" />
               </div>
             </div>
         </section>
