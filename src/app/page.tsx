@@ -4,6 +4,8 @@ import {
   BrainCircuit,
   Smartphone,
   X,
+  Github,
+  Chrome,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -13,11 +15,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
 import { AndroidIcon } from '@/components/icons/android-icon'
 import { GeminiIcon } from '@/components/icons/gemini-icon'
-import { QrGenerator } from '@/components/qr-generator'
 
 export default function Home() {
   return (
@@ -39,7 +38,7 @@ export default function Home() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative py-20 text-center md:py-32" id="hero">
+        <section className="relative flex min-h-screen items-center py-20 text-center md:py-32" id="hero">
           <div
             className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-background"
             aria-hidden="true"
@@ -58,6 +57,15 @@ export default function Home() {
                   Descargar Lumi (APK)
                 </a>
               </Button>
+            </div>
+            {/* Social Links */}
+            <div className="mt-6 flex justify-center gap-6 text-muted-foreground">
+                <a href="https://github.com/christopher-two/lumi" target="_blank" rel="noopener noreferrer" className="hover:text-accent" aria-label="GitHub">
+                    <Github className="h-6 w-6" />
+                </a>
+                <a href="https://christopher.com.mx/" target="_blank" rel="noopener noreferrer" className="hover:text-accent" aria-label="Christopher Two">
+                   <img src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Override Logo" width={32} height={32} className="h-6 w-6" />
+                </a>
             </div>
           </div>
         </section>
@@ -129,13 +137,13 @@ export default function Home() {
               <AccordionItem value="item-1">
                 <AccordionTrigger>¿Es Lumi compatible con todos los dispositivos Android?</AccordionTrigger>
                 <AccordionContent>
-                  Lumi está diseñado para ser compatible con una amplia gama de dispositivos Android. Recomendamos Android 8.0 (Oreo) o superior para una experiencia óptima.
+                  Lumi está diseñado para ser compatible con Android 12 en adelante.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>¿Necesito una clave de API de Gemini para usar la aplicación?</AccordionTrigger>
                 <AccordionContent>
-                  No, no necesitas tu propia clave de API. Lumi gestiona la integración con la API de Gemini de forma transparente para ofrecerte la mejor experiencia sin configuraciones complejas.
+                  Sí, Lumi al inicio te pide una clave API para su correcto funcionamiento. La ventaja es que obtener una es completamente gratis.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
