@@ -3,11 +3,6 @@ import {
   Camera,
   BrainCircuit,
   Smartphone,
-  QrCode,
-  Twitter,
-  Linkedin,
-  Mail,
-  ChevronRight,
   X,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -78,36 +73,28 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section id="features" className="bg-secondary py-16 md:py-24">
+        <section id="features" className=" py-16 md:py-24">
           <div className="container mx-auto max-w-7xl px-4">
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
               <FeatureCard
                 icon={<Camera className="h-8 w-8 text-accent" />}
                 title="Escáner de Alta Precisión"
                 description="Experimenta un escaneo ultrarrápido y fiable. Gracias a la integración con ML Kit de Google, Lumi decodifica códigos QR al instante."
-                imageSrc="https://placehold.co/600x400.png"
-                imageHint="app scanner"
               />
               <FeatureCard
                 icon={<BrainCircuit className="h-8 w-8 text-accent" />}
                 title="Generador Impulsado por IA"
                 description="Simplemente describe el código QR que deseas (contenido, colores, estilo) y nuestra integración con la API de Gemini lo hará realidad."
-                imageSrc="https://placehold.co/600x400.png"
-                imageHint="app generator"
               />
               <FeatureCard
                 icon={<GeminiIcon className="h-8 w-8 text-accent" />}
                 title="Integración con API de Gemini"
                 description="El corazón inteligente de Lumi. La API de Gemini interpreta tus indicaciones de lenguaje natural, ofreciendo resultados sorprendentes."
-                imageSrc="https://placehold.co/600x400.png"
-                imageHint="flowchart diagram"
               />
               <FeatureCard
                 icon={<Smartphone className="h-8 w-8 text-accent" />}
                 title="UI Intuitiva y Responsiva"
                 description="Diseñada con Jetpack Compose, Lumi ofrece una experiencia de usuario fluida y visualmente atractiva en cualquier dispositivo Android."
-                imageSrc="https://placehold.co/600x400.png"
-                imageHint="app interface"
               />
             </div>
           </div>
@@ -131,20 +118,6 @@ export default function Home() {
                 </div>
             </div>
         </section>
-
-        {/* QR Generator Section */}
-        <section id="generator" className="bg-secondary py-16 md:py-24">
-          <div className="container mx-auto max-w-3xl px-4">
-            <h2 className="mb-4 text-center text-3xl font-bold tracking-tight md:text-4xl">
-              Prueba el Generador IA
-            </h2>
-            <p className="mb-8 text-center text-lg text-muted-foreground">
-              Describe el código QR que quieres crear y mira la magia suceder.
-            </p>
-            <QrGenerator />
-          </div>
-        </section>
-
 
         {/* FAQ Section */}
         <section id="faq" className="py-16 md:py-24">
@@ -194,7 +167,7 @@ export default function Home() {
                 <span className="text-lg">creado por</span>
                 <Image src="https://vluoppbaehfmhkebyygv.supabase.co/storage/v1/object/public/logos//logo_christopher_two.svg" alt="Lumi Logo" width={50} height={50} className="h-12 w-auto filter invert" />
                 <X className="h-8 w-8 text-white" />
-                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo_w.svg" alt="Override Logo" width={150} height={48} className="h-12 w-auto" />
+                <Image src="https://override.com.mx/SRC/IMG/logo/Overridelogo.svg" alt="Override Logo" width={150} height={48} className="h-12 w-auto" />
               </div>
             </div>
         </section>
@@ -216,7 +189,7 @@ export default function Home() {
   )
 }
 
-function FeatureCard({ icon, title, description, imageSrc, imageHint }: { icon: React.ReactNode, title: string, description: string, imageSrc: string, imageHint: string }) {
+function FeatureCard({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) {
   return (
     <Card className="flex flex-col text-center transition-all hover:shadow-lg hover:-translate-y-1">
       <CardHeader className="items-center">
@@ -225,9 +198,6 @@ function FeatureCard({ icon, title, description, imageSrc, imageHint }: { icon: 
       </CardHeader>
       <CardContent className="flex-grow">
         <p className="text-muted-foreground">{description}</p>
-        <div className="mt-4 aspect-video w-full overflow-hidden rounded-md">
-            <Image src={imageSrc} width={600} height={400} alt={title} data-ai-hint={imageHint} className="h-full w-full object-cover" />
-        </div>
       </CardContent>
     </Card>
   )
